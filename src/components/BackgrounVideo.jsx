@@ -1,3 +1,5 @@
+import bgVideo from "@/assets/background2.mp4";
+
 export const BackgroundVideo = () => {
   return (
     <div className="fixed inset-0 overflow-hidden z-0">
@@ -8,7 +10,7 @@ export const BackgroundVideo = () => {
         muted
         playsInline
       >
-        <source src="src/assets/background2.mp4" type="video/mp4" />
+        <source src={bgVideo} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
     </div>
