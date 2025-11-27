@@ -1,52 +1,61 @@
 import React from "react";
 
+// Importing assets directly so bundler handles the paths (best for Netlify)
+import bharat from "@/assets/bharat.png";
+import krishna from "@/assets/krishna.png";
+import shaily from "@/assets/shaily.png";
+import bosch from "@/assets/bosch.png";
+import zuari from "@/assets/zuari.png";
+import jubilant from "@/assets/jubilant.png";
+import sml from "@/assets/sml.png";
+
 const caseStudies = [
   {
     id: 1,
     name: "Bharat Seats Limited",
-    logo: "/src/assets/bharat.png",
+    logo: bharat,
     price: 121,
     status: "Holding",
   },
   {
     id: 2,
     name: "Krishana Phoschem Limited",
-    logo: "/src/assets/krishna.png",
+    logo: krishna,
     price: 381.35,
     status: "Sold",
   },
   {
     id: 3,
     name: "Shaily Engineering Plastics Limited",
-    logo: "/src/assets/shaily.png",
+    logo: shaily,
     price: 1930.9,
     status: "Holding",
   },
   {
     id: 4,
     name: "Bosch Limited",
-    logo: "/src/assets/bosch.png",
+    logo: bosch,
     price: 34245,
     status: "Holding",
   },
   {
     id: 5,
     name: "Zuari Agro Chemicals Limited",
-    logo: "/src/assets/zuari.png",
+    logo: zuari,
     price: 290.7,
     status: "Sold",
   },
   {
     id: 6,
     name: "Jubilant Agri & Consumer Products",
-    logo: "/src/assets/jubilant.png",
+    logo: jubilant,
     price: 2002.2,
     status: "Holding",
   },
   {
     id: 7,
     name: "SML Isuzu Limited",
-    logo: "/src/assets/sml.png",
+    logo: sml,
     price: 2791.6,
     status: "Sold",
   },
@@ -66,10 +75,11 @@ export const CaseStudies = () => {
 
         {/* Description */}
         <p className="text-center text-white/70 mb-12 max-w-2xl mx-auto">
-          The securities quoted below are ONLY for illustration purposes and are not recommendations.
+          The securities quoted below are ONLY for illustration purposes and are
+          not recommendations.
         </p>
 
-        {/* Case study cards */}
+        {/* Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {caseStudies.map((item) => (
             <div
@@ -87,11 +97,17 @@ export const CaseStudies = () => {
 
               {/* Logo */}
               <div className="flex items-center justify-center mb-4">
-                <img src={item.logo} alt={item.name} className="w-12 h-12 object-contain" />
+                <img
+                  src={item.logo}
+                  alt={item.name}
+                  className="w-12 h-12 object-contain"
+                />
               </div>
 
-              {/* Name and price */}
-              <h3 className="font-semibold text-lg mb-1 text-white">{item.name}</h3>
+              {/* Name + price */}
+              <h3 className="font-semibold text-lg mb-1 text-white">
+                {item.name}
+              </h3>
               <p className="text-sm text-white/70">
                 (Reco Price Rs. {item.price}/share; Status- {item.status})
               </p>
