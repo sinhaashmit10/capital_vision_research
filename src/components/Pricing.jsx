@@ -5,10 +5,10 @@ const pricingData = [
   {
     category: "Basic",
     plans: [
-      { name: "Stock Cash", monthly: 1700, quarterly: 4720 },
-      { name: "Stock Future", monthly: 1700, quarterly: 4720 },
-      { name: "Stock Option", monthly: 1700, quarterly: 4720 },
-      { name: "Index Option", monthly: 1700, quarterly: 4720 },
+      { name: "Stock Cash", monthly: 17000, quarterly: 47200 },
+      { name: "Stock Future", monthly: 17000, quarterly: 47200 },
+      { name: "Stock Option", monthly: 17000, quarterly: 47200 },
+      { name: "Index Option", monthly: 17000, quarterly: 47200 },
     ],
   },
   {
@@ -27,13 +27,13 @@ const pricingData = [
   {
     category: "Bullions / Base Metal / Energy",
     plans: [
-      { name: "Gold / Silver", monthly: 1700, quarterly: 4720 },
+      { name: "Gold / Silver", monthly: 17000, quarterly: 47200 },
       {
         name: "Zinc / Aluminium / Lead / Copper / Nickel",
         monthly: 1700,
         quarterly: 4720,
       },
-      { name: "Crude / Natural Gas", monthly: 1700, quarterly: 4720 },
+      { name: "Crude / Natural Gas", monthly: 17000, quarterly: 47200 },
     ],
   },
   {
