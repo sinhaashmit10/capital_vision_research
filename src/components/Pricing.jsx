@@ -30,8 +30,8 @@ const pricingData = [
       { name: "Gold / Silver", monthly: 17000, quarterly: 47200 },
       {
         name: "Zinc / Aluminium / Lead / Copper / Nickel",
-        monthly: 1700,
-        quarterly: 4720,
+        monthly: 17000,
+        quarterly: 47200,
       },
       { name: "Crude / Natural Gas", monthly: 17000, quarterly: 47200 },
     ],
